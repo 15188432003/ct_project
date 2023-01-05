@@ -1,0 +1,40 @@
+{
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "aliasPath": "/",
+      "name": "index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "ROKiT EYE Q"
+      }
+    },
+    {
+      "path": "pages/index/index1",
+      "aliasPath": "/products/:name?",
+      "name": "products",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "ROKiT EYE Q"
+      }
+    },
+    {
+      "path": "pages/NotFound/NotFound",
+      "style": {
+        "navigationBarTitleText": "",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "ROKiT EYE Q",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "pageOrientation": "portrait"
+  }
+}

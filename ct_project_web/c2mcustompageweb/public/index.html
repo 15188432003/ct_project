@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="pragma" content="no-cache"> <!-- // 禁止浏览器从本地磁盘缓存上访问页面内容 -->
+  <meta http-equiv="cache-control" content="no-cache"> <!-- // 请求和响应不缓存 -->
+  <meta http-equiv="expires" content="0"> <!-- // 指定页面在缓存中保存多久页面就过期，content="0"指到达0后页面就过期，值可以是GMT格式的时间 -->
+  <meta http-equiv="cache" content="no-cache">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">c -->
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="preload" as="image" href="https://design-your-own.rokitlife.com/mobile/static/img/bg-model.f1d98aa8.png">
+  <title>ROKiT EYE Q</title>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKRRC2JWQB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HKRRC2JWQB');
+  </script>
+
+</html>

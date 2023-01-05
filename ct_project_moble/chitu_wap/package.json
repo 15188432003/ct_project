@@ -1,0 +1,64 @@
+{
+  "name": "ROKiT EYE Q",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:h5": "cross-env NODE_ENV=development UNI_PLATFORM=h5 vue-cli-service uni-serve --mode dev",
+    "dev:h5-test": "cross-env NODE_ENV=development VUE_APP_ENV=test UNI_PLATFORM=h5 vue-cli-service uni-serve --mode test",
+    "dev:h5-prod": "cross-env NODE_ENV=development VUE_APP_ENV=prod UNI_PLATFORM=h5 vue-cli-service uni-serve --mode prod",
+    "build:h5": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build --mode dev",
+    "build:h5-test": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build --mode test",
+    "build:h5-prod": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build --mode prod",
+    "postinstall": "patch-package"
+  },
+  "uni-app": {
+    "scripts": {
+      "h5-test": {
+        "title": "h5-test",
+        "browser": "",
+        "env": {
+          "UNI_PLATFORM": "h5",
+          "NODE_ENV": "test",
+          "VUE_APP_google_ga": "G-RR2QBN5TEQ"
+        },
+        "define": {
+          "CUSTOM-CONST": true
+        }
+      },
+      "h5-prod": {
+        "title": "h5-prod",
+        "browser": "",
+        "env": {
+          "UNI_PLATFORM": "h5",
+          "NODE_ENV": "production",
+          "VUE_APP_google_ga": "G-RR2QBN5TEQ"
+        },
+        "define": {
+          "CUSTOM-CONST": true
+        }
+      }
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@linusmelb/ga-protocol": "^1.0.32",
+    "@tweenjs/tween.js": "^18.6.4",
+    "bignumber.js": "^9.0.2",
+    "gsap": "^3.11.1",
+    "moment": "^2.29.1",
+    "three": "^0.137.5",
+    "three-mesh-bvh": "^0.5.16",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.7",
+    "uview-ui": "^1.8.4",
+    "vconsole": "^3.14.6"
+  },
+  "devDependencies": {
+    "lil-gui": "^0.17.0",
+    "patch-package": "^6.4.7"
+  }
+}

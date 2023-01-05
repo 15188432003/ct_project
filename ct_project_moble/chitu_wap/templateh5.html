@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="pragma" content="no-cache"> <!-- // 禁止浏览器从本地磁盘缓存上访问页面内容 -->
+	<meta http-equiv="cache-control" content="no-cache"> <!-- // 请求和响应不缓存 -->
+	<meta http-equiv="expires" content="0"> <!-- // 指定页面在缓存中保存多久页面就过期，content="0"指到达0后页面就过期，值可以是GMT格式的时间 -->
+	<meta http-equiv="cache" content="no-cache">
+	<title>
+		<%= htmlWebpackPlugin.options.title %>
+	</title>
+	<script>
+		var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') || CSS
+			.supports('top: constant(a)'))
+		document.write(
+			'<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+			(coverSupport ? ', viewport-fit=cover' : '') + '" />')
+	</script>
+	<link rel="stylesheet" href="<%= BASE_URL %>static/index.<%= VUE_APP_INDEX_CSS_HASH %>.css" />
+</head>
+
+<body>
+	<noscript>
+		<strong>Please enable JavaScript to continue.</strong>
+	</noscript>
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+
+
+	<script id="vertexShader" type="x-shader/x-vertex">
+			varying vec2 vUv;
+		        void main()
+		        {
+		            vUv = uv;
+		            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+		        }
+		    </script>
+
+	<script id="fragmentShader" type="x-shader/x-vertex">
+			varying vec2 vUv;
+			      uniform vec3 color1; 
+			      uniform vec3 color2; 
+			      uniform float power;  
+			      void main( void ) {
+			       
+			        vec3 aColor =(1.0-vUv.y)*(color1-color2)+color2;
+			     
+					
+			        float alp =pow((1.0-vUv.y), power);
+					
+			        gl_FragColor =vec4(aColor,alp);
+			      }
+		    </script>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RR2QBN5TEQ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-RR2QBN5TEQ');
+	</script>
+</body>
+
+</html>

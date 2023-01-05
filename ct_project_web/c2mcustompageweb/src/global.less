@@ -1,0 +1,331 @@
+// 弹性布局
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-flex-end {
+  align-items: flex-end;
+}
+
+// 边距
+.margin-9 {
+  margin: 0px 7px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.margin-top-15 {
+  margin-top: 15px;
+}
+
+.margin-top-37 {
+  margin-top: 37px;
+}
+
+.margin-right-5 {
+  margin-right: 5px;
+}
+
+.margin-right-20 {
+  margin-right: 20px;
+}
+
+.margin-right-24 {
+  margin-right: 24px;
+}
+
+.margin-right-30 {
+  margin-right: 30px;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.margin-bottom-9 {
+  margin-bottom: 9px;
+}
+
+.margin-bottom-27 {
+  margin-bottom: 27px;
+}
+
+.margin-bottom-48 {
+  margin-bottom: 48px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-left-5 {
+  margin-left: 5px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-tr-2 {
+  margin: 3px 0 0 5px;
+}
+
+.margin-tb-25 {
+  margin: 25px 0;
+}
+
+.margin-tb-10 {
+  margin: 10px 0;
+}
+
+.margin-tb-15 {
+  margin: 10px 0 15px 0;
+}
+
+.margin-tb-20-40 {
+  margin: 20px 0 40px 0;
+}
+
+.margin-tb-20-30 {
+  margin: 20px 0 30px 0;
+}
+
+.padding-tlr-10 {
+  padding: 10px 40px 0 40px;
+}
+
+.padding-left-20 {
+  padding-left: 20px;
+}
+
+// 字体样式
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('./assets/typeface/Poppins-Bold.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('./assets/typeface/Poppins-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'exmouth';
+  src: url('./assets/typeface/exmouth.ttf') format('truetype');
+  font-display: swap;
+}
+
+.Poppins-Regular {
+  font-family: 'Poppins-Regular';
+}
+
+.Poppins-Bold {
+  font-family: 'Poppins-Bold';
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-17 {
+  font-size: 17px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-22 {
+  font-size: 22px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-size-26 {
+  font-size: 26px;
+}
+
+.weight-bolder {
+  font-weight: bolder;
+}
+
+.weight-normal {
+  font-weight: normal;
+}
+
+.color-red {
+  color: #DF5641;
+}
+
+.color-grey {
+  color: #999999;
+}
+
+.color-2D2D2D {
+  color: #2D2D2D;
+}
+
+.color-333333 {
+  color: #333333;
+}
+
+.color-666666 {
+  color: #666666;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// 超出省略
+.ellipsis {
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ellipsis-24 {
+  width: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ellipsis-20 {
+  height: 26px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.border-radius-0 {
+  border-radius: 0 !important;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+
+
+
+/* 定义滚动条样式 */
+.scrollbar::-webkit-scrollbar {
+  //display: none;
+  width: 6px;
+  height: 6px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F7F8FA;
+}
+
+/*定义滑块 内阴影+圆角*/
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a1a3a9;
+}
+
+.ant-drawer-wrapper-body::-webkit-scrollbar {
+  //display: none;
+  width: 6px;
+  height: 6px;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+.ant-drawer-wrapper-body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #F7F8FA;
+}
+
+/*定义滑块 内阴影+圆角*/
+.ant-drawer-wrapper-body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a1a3a9;
+}
+
+
+// 清除浮动
+.clearfix {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+//左浮动
+.left {
+  float: left;
+}
+
+//右浮动
+.right {
+  float: right;
+}
+
+
+
+
+

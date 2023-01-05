@@ -1,0 +1,15 @@
+diff --git a/node_modules/three/build/three.module.js b/node_modules/three/build/three.module.js
+index 2bcabf7..6b7a842 100644
+--- a/node_modules/three/build/three.module.js
++++ b/node_modules/three/build/three.module.js
+@@ -39311,7 +39311,7 @@ class FileLoader extends Loader {
+ 
+ 										loaded += value.byteLength;
+ 
+-										const event = new ProgressEvent( 'progress', { lengthComputable, loaded, total } );
++										const event = { lengthComputable, loaded, total, response };
+ 										for ( let i = 0, il = callbacks.length; i < il; i ++ ) {
+ 
+ 											const callback = callbacks[ i ];
+										}
+}
